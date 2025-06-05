@@ -1,0 +1,17 @@
+<h2><a href="https://www.geeksforgeeks.org/problems/remove-the-balls--170647/1">Remove the balls</a></h2><h3>Difficulty Level : Difficulty: Medium</h3><hr><div class="problems_problem_content__Xm_eO"><p class="" data-start="166" data-end="269">Imagine an array containing a sequence of balls. You are given two arrays: <strong>color</strong> and <strong>radius</strong>, where:</p>
+<ul data-start="271" data-end="380">
+<li class="" data-start="271" data-end="324">
+<p class="" data-start="273" data-end="324"><strong>color[i]</strong> represents the color of the i-th ball.</p>
+</li>
+<li class="" data-start="325" data-end="380">
+<p class="" data-start="327" data-end="380"><strong>radius[i]</strong> represents the radius of the i-th&nbsp; ball.</p>
+</li>
+</ul>
+<p class="" data-start="382" data-end="630">If <strong data-start="385" data-end="410">two consecutive balls</strong> have the <strong data-start="420" data-end="434">same color</strong> and the <strong data-start="443" data-end="458">same radius</strong>, they are both <strong data-start="474" data-end="485">removed</strong> from the array. This process continues recursively — after removing such a pair, if the new adjacent balls also match, they are removed as well.<br><br>Your task is to determine the <strong data-start="662" data-end="691">number of balls remaining</strong> in the array after performing all such possible removals.</p>
+<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
+<pre><span style="font-size: 14pt;"><strong>Input</strong>: color[] = [2, 3, 5], radius[] = [3, 3, 5]
+<strong>Output: </strong>1
+<strong>Explanation</strong>: First ball and second ball have same color 2 and same radius 3. So,after removing only one ball is left. It could not be removed from the array. Hence, the final array has length 1.</span></pre>
+<pre><span style="font-size: 14pt;"><strong>Input: </strong>color[] = [1, 3, 3, 1], radius[] = [2, 5, 5, 2]<strong><br>Output:</strong> 0
+<strong>Explanation</strong>: Ball 2 and ball 3 have same color 3 and same radius 5. So,they are removed. Now, we have got our color[]=[1, 1] and radius[]=[2, 2]. Both the left balls are consecutive now and they are having same color and radius. So,these two balls areremoved as well. Now,we are left with empty <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">final array.  Hence, the length of final array is 0.<br></span></span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ color[i]&nbsp;≤ 10<sup>9</sup><br>1 ≤ radius[i]&nbsp;≤ 10<sup>9</sup></span><span style="font-size: 18px;"><sup>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</sup></span></p></div><br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Stack</code>&nbsp;<code>Data Structures</code>&nbsp;
